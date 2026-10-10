@@ -20,7 +20,7 @@ The first documented protocol version is `2026-10`.
 ## Contributing
 
 If a setting we use for your engine differs from what you recommend, open an issue with the engine, the version, what differs and where your documentation says so; see
-[Contribute](https://docs.humem.ai/dbbench/contribute/). A corrected configuration is re-run, and the earlier result stays visible in the history.
+[Contribute](https://docs.humem.ai/dbbench/latest/contribute/). A corrected configuration is re-run, and the earlier result stays visible in the history.
 
 ## License
 
