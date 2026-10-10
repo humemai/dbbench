@@ -1,0 +1,98 @@
+site_name: DBBench
+site_url: https://docs.humem.ai/dbbench/
+site_description: Documentation for DBBench, an independent, open benchmark of database engines
+site_author: HumemAI
+repo_url: https://github.com/humemai/dbbench
+repo_name: humemai/dbbench
+edit_uri: edit/main/docs/
+
+copyright: Copyright &copy; 2026 HumemAI
+
+theme:
+  name: material
+  language: en
+  # HumemAI design system (github.com/humemai/design-system), vendored in
+  # docs/brand: oxblood palette, Schibsted Grotesk + DM Mono (Newsreader
+  # headings come from brand/css/mkdocs.css), the white mark in the header.
+  font:
+    text: Schibsted Grotesk
+    code: DM Mono
+  logo: brand/logo/mark-white.svg
+  favicon: brand/export/favicon.svg
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/humemai/dbbench
+  version:
+    provider: mike
+  version_tag: !ENV [MIKE_VERSION_TAG, main]
+
+# The vendored design system's bookkeeping stays out of the built site.
+exclude_docs: |
+  brand/VERSION.md
+  brand/verify.sh
+
+extra_css:
+  - brand/css/mkdocs.css
+
+nav:
+  - Home: index.md
+  - Methodology: methodology.md
+  - Engines: engines.md
+  - Reproduce: reproduce.md
+  - Result rows: results-schema.md
+  - Contribute: contribute.md
+  - Changelog: changelog.md
