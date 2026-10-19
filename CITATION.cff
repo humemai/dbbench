@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "DBBench: an independent, open benchmark of database engines"
+message: If you use DBBench or its results, please cite it using the metadata from this file.
+type: software
+authors:
+  - given-names: Taewoon
+    family-names: Kim
+    email: taewoon@humem.ai
+    orcid: "https://orcid.org/0000-0003-2892-0194"
+    affiliation: HumemAI
+repository-code: "https://github.com/humemai/dbbench"
+url: "https://humem.ai/research/dbbench"
+abstract: >-
+  An independent, open benchmark of database engines: the same tasks on the same machine with published settings, and every
+  result tied to the exact engine version. Lanes cover tables, graphs, vectors, time series, cross-model queries and lifecycle.
+license: MIT
+version: "2026-10"
+keywords:
+  - benchmark
+  - database
+  - graph database
+  - vector search
+  - time series
+  - multi-model database
