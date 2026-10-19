@@ -14,6 +14,13 @@ abstract: >-
   An independent, open benchmark of database engines: the same tasks on the same machine with published settings, and every
   result tied to the exact engine version. Lanes cover tables, graphs, vectors, time series, cross-model queries and lifecycle.
 license: MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23481288
+    description: Concept DOI for all released versions
+  - type: doi
+    value: 10.5281/zenodo.23481289
+    description: DOI of release 2026-10
 version: "2026-10"
 keywords:
   - benchmark
