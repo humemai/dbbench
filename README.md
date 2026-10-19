@@ -17,6 +17,10 @@ This repository holds the documentation and, after the first paper, will hold th
 [humemai/arcadedb-embedded-python](https://github.com/humemai/arcadedb-embedded-python) under `benchmarks/`, and the results are published on the project page above.
 The first documented protocol version is `2026-10`.
 
+## Citing DBBench
+
+Cite a release of this repository rather than the web page, because the page changes with every measurement. Each release is archived on Zenodo with its own DOI, and GitHub's "Cite this repository" button gives an APA and a BibTeX entry from [CITATION.cff](CITATION.cff).
+
 ## Contributing
 
 If a setting we use for your engine differs from what you recommend, open an issue with the engine, the version, what differs and where your documentation says so; see
