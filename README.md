@@ -3,7 +3,7 @@
 An independent, open benchmark of database engines: the same tasks, on the same machine, with published settings, so anyone can check a result and any vendor can tell us when
 a setting is not what they recommend.
 
-- **Results:** <https://humem.ai/software/dbbench>
+- **Results:** <https://humem.ai/research/dbbench>
 - **Documentation:** <https://docs.humem.ai/dbbench/> (methodology, engine settings, how to reproduce, how to contribute a correction)
 
 ## Lanes
