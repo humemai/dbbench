@@ -6,7 +6,7 @@ that produced it, and keeps the history, so a number can always be traced and a 
 !!! note "Status"
     The first documented protocol version is `2026-10`. The benchmark code is still developed in
     [humemai/arcadedb-embedded-python](https://github.com/humemai/arcadedb-embedded-python) (`benchmarks/`) and moves into this repository after its first paper. The live results are on
-    the [project page](https://humem.ai/projects/dbbench); these documents describe how they are produced.
+    the [project page](https://humem.ai/software/dbbench); these documents describe how they are produced.
 
 ## Lanes
 
