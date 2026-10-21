@@ -4,7 +4,7 @@ DBBench is an independent, open benchmark of database engines. It runs the same 
 that produced it, and keeps the history, so a number can always be traced and a change can always be seen.
 
 !!! note "Status"
-    The first documented protocol version is `2026-10`. The benchmark code is still developed in
+    The protocol version is `2026-11`, in development until its first release; the first published results will be measured with it. The benchmark code is still developed in
     [humemai/arcadedb-embedded-python](https://github.com/humemai/arcadedb-embedded-python) (`benchmarks/`) and moves into this repository after its first paper. The live results are on
     the [project page](https://humem.ai/research/dbbench); these documents describe how they are produced.
 
@@ -24,7 +24,7 @@ Every engine is compared only in the lanes it is built for. An in-process engine
 ## Where to go next
 
 - [Methodology](methodology.md): the rules every run follows.
-- [Engines](engines.md): what we run for each engine, and how to tell us it is wrong.
+- [Engines](engines.md): what we run for each engine, and how to tell us it is wrong (generated from the first 2026-11 rows when they land).
 - [Reproduce](reproduce.md): how to repeat a result on your own hardware.
 - [Result rows](results-schema.md): what one published measurement contains.
 - [Contribute](contribute.md): corrections, new engines, new queries.

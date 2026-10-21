@@ -2,7 +2,10 @@
 
 Changes to the protocol, newest first. Engine versions are not listed here; they are on every result row.
 
+## 2026-11 (in development)
+
+The protocol version, in development until its first release. The method is described on the [Methodology](methodology.md) page.
+
 ## 2026-10
 
-First documented protocol version. Rows are keyed by engine version, so a new engine release adds rows next to the old ones. Queries that exceed their time budget are recorded as censored;
-for engines that can be asked to stop a query, the engine enforces the budget.
+A development release, superseded by 2026-11 before any comparison was published from it.
