@@ -17,7 +17,7 @@ Engines are compared inside each lane; an engine appears only in the lanes it is
 
 This repository holds the documentation and, after the first paper, will hold the benchmark code. Until then the code is developed in
 [humemai/arcadedb-embedded-python](https://github.com/humemai/arcadedb-embedded-python) under `benchmarks/`, and the results are published on the project page above.
-The first documented protocol version is `2026-10`.
+The documented protocol version is `2026-11`, in development until its first release.
 
 ## Citing DBBench
 

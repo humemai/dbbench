@@ -18,10 +18,7 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.23481288
     description: Concept DOI for all released versions
-  - type: doi
-    value: 10.5281/zenodo.23481289
-    description: DOI of release 2026-10
-version: "2026-10"
+version: "2026-11 (in development)"
 keywords:
   - benchmark
   - database
