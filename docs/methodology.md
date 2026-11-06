@@ -10,13 +10,13 @@ These are the rules every published result follows. A result that breaks one of 
    Every deviation is listed on the [Engines](engines.md) page with the reason. An index added for one engine is added, in its equivalent form, for every engine that has one.
 4. **Equal resources.** Every engine gets the same memory cap and CPU allotment inside a lane, and the same durability classes are measured for every engine that offers them
    (a relaxed class and a strict class where the engine supports both).
-5. **Repetitions and medians.** Each cell is run five times, and the page prints the median with the minimum and maximum, never a single run and never the mean.
+5. **Repetitions and medians.** Each cell is run up to five times, in whole passes of one repetition each: three repetitions for every engine first (the four ArcadeDB arms included), then a fourth, then a fifth. The page prints the median with the minimum and maximum, never a single run and never the mean, and states the number of repetitions behind a table whenever it is below five.
 6. **Budgets and censoring.** A query that cannot finish within its time budget is recorded as censored, with the budget, and is never silently dropped or counted as fast. Where an engine
    can be asked to stop a query itself, the budget is enforced by the engine; otherwise it is checked between iterations.
 7. **Failures are results.** An engine that runs out of memory, times out or refuses a task has that recorded as its result for the cell, with the error it gave.
 8. **Versions are exact.** Every row records the engine version and, for containers, the image digest it ran on. A cell never mixes rows from different versions: when an engine ships a new
-   version, new rows are added next to the old ones. ArcadeDB is pinned by upstream commit rather than by release number, because its build line reads the same development version for every commit;
-   its embedded and server arms in one table are built from the same commit and run the same JVM.
+   version, new rows are added next to the old ones. ArcadeDB is pinned by upstream commit rather than by release number when it runs a development build, because its build line reads the same development version for every commit;
+   its embedded and server arms in one table are built from the same commit and run the same JVM. The 2026-11 measurement of ArcadeDB runs the 26.11.1 release in four arms: embedded and served, each on the JVM and as the native build.
 9. **Warm-up is declared.** Whether a timing includes the first run, a warm-up, or an index build is stated in the table it appears in.
 10. **History is kept.** A correction or a new version adds rows; the earlier rows stay visible.
 

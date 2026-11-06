@@ -10,6 +10,7 @@ Method changes made while it is in development, before any result is published w
 
 - Served ArcadeDB leaves the initial heap (`-Xms`) unset, like embedded ArcadeDB. Neo4j and Elasticsearch keep a pinned initial heap, as their vendors recommend.
 - Neo4j's heap and page cache come from its own `neo4j-admin server memory-recommendation` for each memory cap. Elasticsearch's heap is the smaller of the tier heap, 50% of the cap and 26 GiB.
+- Container io figures count a stacked block device once. Earlier rows summed every device line of the cgroup `io.stat`, which counted the benchmark machine's NVMe disk and the device-mapper device on top of it twice. The harness now stamps `io_stat_dedup: 1` into each row, and the frozen table halves the io figures of rows without the stamp (see [Result rows](results-schema.md)).
 - Milvus runs as 3.0.3 on the vendor's Docker Compose standalone (three containers sharing the cell's memory cap), ingests by bulk import, waits for every segment to be flushed and the index to be finished before timed searches, and records the storage mode, the output fields and the filter. Storage V3 is a sensitivity setting.
 
 ## 2026-10
