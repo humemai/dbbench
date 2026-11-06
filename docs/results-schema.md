@@ -12,8 +12,9 @@ One published measurement is one row. A row says what ran, on what, and how it w
 | `engine_version` | the exact engine version; container runs also record the image digest |
 | `durability_class` | the durability class the run used, where the engine offers more than one |
 | `mem_cap` | the memory cap the run had |
+| `io_*_mib` | the bytes the cell's containers read from and wrote to disk, per phase and in total, from the container's `io.stat`. Rows written on the benchmark machine before the fix for [issue #555](https://github.com/humemai/arcadedb-embedded-python/issues/555) counted a stacked block device (an NVMe disk and the device-mapper device on top of it) twice, so those figures are about twice their value. The fixed harness counts the device once and stamps `io_stat_dedup: 1` into the row; the frozen table halves the io figures of the earlier rows, which lack the stamp, and lists each corrected row with its raw values in `generated/io_stat_correction.json` |
 | `error` / `oom_killed` | what went wrong, if anything; a failure is a result |
 | metric fields | latencies (median and percentiles), throughput, peak memory and the like, per lane |
 | `*_censored` / `*_budget_s` | whether a query hit its time budget, and the budget |
 
-Rows are never edited. A correction adds a row; the history keeps both.
+Rows are never edited. A correction adds a row; the history keeps both. The one correction made after the fact is the io figures above, which is applied in the frozen copy the tables are built from, never in the recorded rows.
