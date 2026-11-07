@@ -1,12 +1,13 @@
-# DBBench
+# MMDBBench
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23481288.svg)](https://doi.org/10.5281/zenodo.23481288)
 
-An independent, open benchmark of database engines: the same tasks, on the same machine, with published settings, so anyone can check a result and any vendor can tell us when
-a setting is not what they recommend.
+An open benchmark of multi-model databases: databases that serve tables, time series, documents, graphs, key-values, and vectors from one storage engine. Specialist databases built for a single model run the same tasks as per-model baselines. The tasks run on the same x86 Linux machine with published settings and pinned versions, in SQL, Cypher, and native query languages, and the raw result rows are open, so anyone can check a result and any vendor can tell us when a setting is not what they recommend.
 
-- **Results:** <https://humem.ai/research/dbbench>
-- **Documentation:** <https://docs.humem.ai/dbbench/> (methodology, engine settings, how to reproduce, how to contribute a correction)
+The benchmark was called DBBench until 2026-11-07. The old URLs for the repository and the project page keep working.
+
+- **Results:** <https://humem.ai/research/mmdbbench>
+- **Documentation:** <https://docs.humem.ai/mmdbbench/> (methodology, engine settings, how to reproduce, how to contribute a correction)
 
 ## Lanes
 
@@ -19,27 +20,31 @@ This repository holds the documentation and, after the first paper, will hold th
 [humemai/arcadedb-embedded-python](https://github.com/humemai/arcadedb-embedded-python) under `benchmarks/`, and the results are published on the project page above.
 The documented protocol version is `2026-11`, in development until its first release.
 
-## Citing DBBench
+## Citing MMDBBench
 
 Cite a release of this repository rather than the web page, because the page changes with every measurement. Each release is archived on Zenodo with its own DOI, and GitHub's "Cite this repository" button gives an APA and a BibTeX entry from [CITATION.cff](CITATION.cff).
 
 The DOI for all versions is [10.5281/zenodo.23481288](https://doi.org/10.5281/zenodo.23481288); the Zenodo record lists the DOI of each release, for when the exact numbers matter.
 
 ```bibtex
-@misc{kim2026dbbench,
-  title     = {{DBBench}: an independent, open benchmark of database engines},
+@misc{kim2026mmdbbench,
+  title     = {{MMDBBench}: an open benchmark of multi-model databases},
   author    = {Kim, Taewoon},
   year      = {2026},
   publisher = {Zenodo},
   doi       = {10.5281/zenodo.23481288},
-  url       = {https://github.com/humemai/dbbench},
+  url       = {https://github.com/humemai/mmdbbench},
 }
 ```
+
+## Related work
+
+Four academic benchmarks address multi-model databases: UniBench, M2Bench, MMSBench-Net, and GRBench. [Related work](docs/related-work.md) says what each covers and how MMDBBench differs.
 
 ## Contributing
 
 If a setting we use for your engine differs from what you recommend, open an issue with the engine, the version, what differs and where your documentation says so; see
-[Contribute](https://docs.humem.ai/dbbench/latest/contribute/). A corrected configuration is re-run, and the earlier result stays visible in the history.
+[Contribute](https://docs.humem.ai/mmdbbench/latest/contribute/). A corrected configuration is re-run, and the earlier result stays visible in the history.
 
 ## License
 

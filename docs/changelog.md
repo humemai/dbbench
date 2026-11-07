@@ -4,6 +4,8 @@ Changes to the protocol, newest first. Engine versions are not listed here; they
 
 ## 2026-11 (in development)
 
+The benchmark was renamed from DBBench to MMDBBench on 2026-11-07 and refocused on multi-model databases. The protocol version is unchanged.
+
 The protocol version, in development until its first release. The method is described on the [Methodology](methodology.md) page.
 
 Method changes made while it is in development, before any result is published with them:

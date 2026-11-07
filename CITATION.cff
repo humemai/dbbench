@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-title: "DBBench: an independent, open benchmark of database engines"
-message: If you use DBBench or its results, please cite it using the metadata from this file.
+title: "MMDBBench: an open benchmark of multi-model databases"
+message: If you use MMDBBench or its results, please cite it using the metadata from this file.
 type: software
 authors:
   - given-names: Taewoon
@@ -8,11 +8,12 @@ authors:
     email: taewoon@humem.ai
     orcid: "https://orcid.org/0000-0003-2892-0194"
     affiliation: HumemAI
-repository-code: "https://github.com/humemai/dbbench"
-url: "https://humem.ai/research/dbbench"
+repository-code: "https://github.com/humemai/mmdbbench"
+url: "https://humem.ai/research/mmdbbench"
 abstract: >-
-  An independent, open benchmark of database engines: the same tasks on the same machine with published settings, and every
-  result tied to the exact engine version. Lanes cover tables, graphs, vectors, time series, cross-model queries and lifecycle.
+  An open benchmark of multi-model databases: one storage engine serving tables, time series, documents, graphs, key-values and vectors,
+  measured against specialist databases as per-model baselines. The same tasks run on the same machine with published settings, and every
+  result is tied to the exact engine version. Tasks are written in SQL, Cypher and native query languages, on x86 Linux, and the raw result rows are open.
 license: MIT
 identifiers:
   - type: doi
@@ -26,3 +27,5 @@ keywords:
   - vector search
   - time series
   - multi-model database
+  - key-value store
+  - document database

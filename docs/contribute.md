@@ -2,7 +2,7 @@
 
 ## Tell us a setting is wrong
 
-Open an issue on [humemai/dbbench](https://github.com/humemai/dbbench/issues) with:
+Open an issue on [humemai/mmdbbench](https://github.com/humemai/mmdbbench/issues) with:
 
 - the engine and the version it applies to,
 - the setting we use and the setting you recommend for this task,
