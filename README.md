@@ -4,6 +4,10 @@
 
 An open benchmark of multi-model databases: databases that serve tables, time series, documents, graphs, key-values, and vectors from one storage engine. Specialist databases built for a single model run the same tasks as per-model baselines. The tasks run on the same x86 Linux machine with published settings and pinned versions, in SQL, Cypher, and native query languages, and the raw result rows are open, so anyone can check a result and any vendor can tell us when a setting is not what they recommend.
 
+## Why
+
+Agent memory is becoming an important workload. An agent keeps what it learns as facts and events (documents and tables), the relations between them (a graph), their meaning (vectors), their words (text), and their time. It asks one database to serve all of these at once, usually in many small collections that change on every turn: a few inserts, then a query right away, with other agents writing next to it. Most benchmarks measure one data model at a time, so the cost of putting them in one engine is not visible. MMDBBench measures multi-model databases across the models, with the specialist engines as per-model baselines, and it states the settings, versions and hardware of every result.
+
 The benchmark was called DBBench until 2026-11-07. The old URLs for the repository and the project page keep working.
 
 - **Results:** <https://humem.ai/research/mmdbbench>
