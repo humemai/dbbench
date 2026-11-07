@@ -1,9 +1,9 @@
-site_name: DBBench
-site_url: https://docs.humem.ai/dbbench/
-site_description: Documentation for DBBench, an independent, open benchmark of database engines
+site_name: MMDBBench
+site_url: https://docs.humem.ai/mmdbbench/
+site_description: Documentation for MMDBBench, an open benchmark of multi-model databases
 site_author: HumemAI
-repo_url: https://github.com/humemai/dbbench
-repo_name: humemai/dbbench
+repo_url: https://github.com/humemai/mmdbbench
+repo_name: humemai/mmdbbench
 edit_uri: edit/main/docs/
 
 copyright: Copyright &copy; 2026 HumemAI
@@ -75,7 +75,7 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/humemai/dbbench
+      link: https://github.com/humemai/mmdbbench
   version:
     provider: mike
   version_tag: !ENV [MIKE_VERSION_TAG, main]
@@ -94,5 +94,6 @@ nav:
   - Engines: engines.md
   - Reproduce: reproduce.md
   - Result rows: results-schema.md
+  - Related work: related-work.md
   - Contribute: contribute.md
   - Changelog: changelog.md
